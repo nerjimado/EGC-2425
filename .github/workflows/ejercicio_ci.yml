@@ -2,7 +2,11 @@ name: Run tests
 
 on:
   push:
-    branches: [config/ci]
+    branches:
+      [config/ci]
+  pull_request:
+    branches:
+      - "*" 
 
 jobs:
   pytest:
